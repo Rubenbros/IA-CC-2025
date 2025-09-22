@@ -1,0 +1,6 @@
+# Python + PyCharm (plantilla sugerida en README)
+venv/
+.idea/
+__pycache__/
+*.pyc
+.DS_Store
