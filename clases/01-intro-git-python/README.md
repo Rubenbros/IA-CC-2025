@@ -69,10 +69,6 @@ Consejos rápidos
 - Usa f-strings para formatear: `f"Hola, {name}!"`.
 - Ejecuta y depura desde PyCharm para ver variables paso a paso.
 
-Entrega sugerida
-- Sube una captura de pantalla de cada script funcionando (salida en consola) y una breve nota explicando qué aprendiste.
-- Si quieres, añade pequeños retos opcionales a cada ejercicio y súbelos en una rama con PR.
-
 Organización de carpetas del curso (convención a seguir)
 - Carpeta raíz para sesiones: `clases/`
 - Una carpeta por sesión con el patrón: `NN-titulo-kebab-case`
