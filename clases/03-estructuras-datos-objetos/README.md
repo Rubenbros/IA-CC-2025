@@ -1,7 +1,5 @@
 # Clase 03 — Estructuras de datos y objetos en Python
 
-Buenas a todos. Hoy vamos a trabajar con las estructuras de datos fundamentales de Python y a profundizar en programación orientada a objetos. Sé que algunos habéis tenido dificultades con programación en primero, así que vamos a ir paso a paso y con muchos ejemplos prácticos.
-
 ## Objetivos de la clase 03
 - Dominar las estructuras de datos básicas: listas, tuplas, diccionarios y conjuntos
 - Entender cuándo usar cada una y sus diferencias clave
