@@ -163,33 +163,6 @@ python -m src.clase03_estructuras_datos_objetos.propiedades
 python -m src.clase03_estructuras_datos_objetos.ejercicio_biblioteca
 ```
 
-## Ejercicios propuestos
-
-### Ejercicio 1: Gestión de estudiantes (básico)
-Crear un diccionario de estudiantes donde la clave es el DNI y el valor es otro diccionario con nombre, edad y lista de asignaturas.
-
-**Tareas:**
-- Añadir 3 estudiantes
-- Buscar un estudiante por DNI
-- Añadir una asignatura a un estudiante
-- Mostrar todos los estudiantes de forma legible
-
-### Ejercicio 2: Sistema de inventario (intermedio)
-Crear un sistema usando clases para gestionar productos en un inventario:
-- Clase `Producto` con nombre, precio, stock
-- Clase `Inventario` que gestione una colección de productos
-- Métodos para añadir, eliminar, buscar y listar productos
-- Método para calcular el valor total del inventario
-
-### Ejercicio 3: Red social simple (avanzado)
-Sistema con herencia:
-- Clase base `Usuario` con nombre, email, lista de amigos
-- Clases hijas: `UsuarioGratuito` y `UsuarioPremium`
-- Implementar métodos para añadir/eliminar amigos
-- Límite de amigos para usuarios gratuitos
-- Usar conjuntos para evitar amigos duplicados
-- Método para sugerir amigos (amigos de amigos que no sean tus amigos)
-
 ## Consejos para los que habéis tenido dificultades
 
 1. **Practicad con listas antes de pasar a otras estructuras.** Son las más versátiles.
