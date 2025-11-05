@@ -86,6 +86,58 @@ Documento con casos de uso reales y aplicaciones en diversos dominios:
   - Predicción de readmisión hospitalaria
   - Transfer learning en medicina
 
+#### 3. [Feature Engineering: Teoría y Práctica](feature_engineering_teoria.md) ⭐ NUEVO
+
+Documento completo sobre ingeniería de características aplicada al proyecto PPT:
+
+**Contenido:**
+- **Fundamentos Teóricos**
+  - ¿Qué es Feature Engineering y por qué es crítico?
+  - El problema de representación y espacio de features
+  - Información mutua y maldición de la dimensionalidad
+  - Principio de parsimonia (Navaja de Occam)
+
+- **Tipos de Features**
+  - Features básicas (directas)
+  - Features derivadas (transformaciones)
+  - Features de agregación (estadísticos)
+  - Features temporales (ventanas, lags)
+  - Features de codificación (Label, One-Hot)
+  - Features de interacción (combinaciones)
+  - Features de dominio (conocimiento experto)
+
+- **Técnicas Avanzadas**
+  - Extracción de componentes
+  - Binning (discretización)
+  - Transformaciones matemáticas (log, sqrt, normalización)
+  - Ventanas deslizantes (sliding windows)
+  - Lag features (retardos)
+  - Features de frecuencia
+  - Features de entropía (aleatoriedad)
+
+- **Aplicación Específica a Piedra, Papel o Tijera**
+  - 8 categorías de features para el proyecto
+  - Ejemplo completo: de datos crudos a vector de features
+  - Código de implementación en Python
+  - Visualizaciones y análisis
+
+- **Validación y Selección**
+  - Análisis de correlación
+  - Información mutua
+  - Feature importance
+  - Eliminación de features redundantes
+  - Validación temporal (crítica para secuencias)
+
+- **Mejores Prácticas**
+  - Evitar data leakage
+  - Escalado de features
+  - Manejo de valores faltantes
+  - Feature engineering iterativo
+  - Documentación
+
+- **Ejercicios Propuestos**
+  - 6 ejercicios prácticos con soluciones
+
 ### 💻 Notebooks Prácticos
 
 #### 1. [Ejemplos ML Generales](../../src/clase05_fundamentos_ia/ejemplos_ml_generales.ipynb)
@@ -115,6 +167,48 @@ Notebook interactivo con código ejecutable:
 
 Notebook original con ejemplos aplicados (incluye caso de estudio de juegos estratégicos).
 
+#### 3. [Feature Engineering PPT](../../src/clase05_fundamentos_ia/feature_engineering_ppt.py) ⭐ NUEVO
+
+Script Python con implementación completa de feature engineering para el proyecto Piedra, Papel o Tijera:
+
+**Contenido:**
+- **Clase PPTFeatureEngineering**: Implementación completa y reutilizable
+- **Features de Frecuencia**: Globales y en ventanas temporales
+- **Features de Patrones**: Lags, bigramas, trigramas, detección de cambios
+- **Features de Rachas**: Victorias/derrotas consecutivas, récords
+- **Features Temporales**: Tiempo de reacción, fases del juego, aceleración
+- **Features de Entropía**: Medición de aleatoriedad y predictibilidad
+- **Features de Markov**: Matrices de transición, predicciones probabilísticas
+- **Features de Respuesta**: Cómo reacciona el oponente a victorias/derrotas
+- **Ejemplos de Uso**: 3 ejemplos completos con visualizaciones
+- **Código Documentado**: Listo para usar en el proyecto
+
+**Cómo ejecutar:**
+```bash
+python src/clase05_fundamentos_ia/feature_engineering_ppt.py
+```
+
+#### 4. [Ejemplo de Uso con CSV](../../src/clase05_fundamentos_ia/ejemplo_uso_csv.py) ⭐ NUEVO
+
+Script completo que muestra el workflow desde CSV hasta dataset listo para ML:
+
+**Contenido:**
+- **Cargar CSV básico**: Solo 3 columnas (numero_ronda, jugada_jugador, jugada_oponente)
+- **Generar features para cada ronda**: Procesamiento completo del historial
+- **Crear DataFrame final**: Más de 30 features generadas automáticamente
+- **Preparar para ML**: Separación de features (X) y objetivo (y)
+- **Ejemplo incremental**: Cómo usar en tiempo real durante el juego
+- **Código comentado**: Cada paso explicado claramente
+
+**Cómo ejecutar:**
+```bash
+python src/clase05_fundamentos_ia/ejemplo_uso_csv.py
+```
+
+**Resultado:** Genera dos archivos CSV:
+- `dataset_ppt_ejemplo.csv` - Datos originales (3 columnas)
+- `dataset_ppt_con_features.csv` - Dataset completo para entrenar modelos (30+ columnas)
+
 ## Cómo Usar Este Material
 
 ### Para Estudiantes
@@ -142,7 +236,13 @@ Notebook original con ejemplos aplicados (incluye caso de estudio de juegos estr
    - Leer Parte 5
    - Practicar interpretación de matrices de confusión
 
-6. **Aplicaciones reales** (1-2 horas):
+6. **Feature Engineering** (3-4 horas) ⭐ NUEVO:
+   - Leer `feature_engineering_teoria.md` completo
+   - Ejecutar `feature_engineering_ppt.py`
+   - Hacer los ejercicios propuestos
+   - Aplicar al proyecto PPT
+
+7. **Aplicaciones reales** (1-2 horas):
    - Leer `ejemplos_aplicaciones_ia.md`
    - Elegir un dominio de interés
    - Investigar más sobre ese dominio
