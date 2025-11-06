@@ -19,21 +19,36 @@ python 02_regresion_lineal.py
 python 03_clasificacion.py
 ```
 
-### 2. Ejercicio principal: PPT con ML
+### 2. Ejercicio principal: PPT con ML (PARA IMPLEMENTAR)
 
-El ejercicio completo que integra todo lo aprendido:
+**Este es TU ejercicio principal. Debes implementarlo desde cero.**
 
-```bash
-# 4. Ejercicio completo de PPT
-python 04_ejercicio_ppt_entrenamiento.py
-```
+El archivo `04_ejercicio_ppt_ALUMNO.py` tiene la estructura básica con TODOs.
 
-Este ejercicio:
-- Carga datos de partidas
-- Genera features (Clase 06)
-- Entrena múltiples modelos
-- Compara resultados
-- Implementa un jugador IA
+**Tu tarea**:
+1. Generar datos de práctica:
+   ```bash
+   python generar_datos_ppt.py
+   ```
+
+2. Implementar todas las funciones marcadas con `TODO` en:
+   ```bash
+   # Abre el archivo y completa los TODOs
+   04_ejercicio_ppt_ALUMNO.py
+   ```
+
+3. El ejercicio debe:
+   - Cargar datos de partidas
+   - Generar features (aplicar Clase 06)
+   - Entrenar múltiples modelos (KNN, Decision Tree, Random Forest)
+   - Comparar resultados
+   - Lograr >50% accuracy (mejor que aleatorio 33%)
+   - (Bonus) Implementar clase JugadorIA
+
+**Recursos de ayuda**:
+- Revisa ejemplos 01-03
+- Repasa Clase 06 (Feature Engineering)
+- Lee `clases/07-entrenamiento-modelos/README.md`
 
 ---
 
