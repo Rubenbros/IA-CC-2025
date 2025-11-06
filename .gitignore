@@ -4,3 +4,6 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Guiones del profesor (no compartir con alumnos)
+guiones_profesor/
