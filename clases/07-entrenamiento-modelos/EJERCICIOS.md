@@ -21,15 +21,24 @@ python 03_clasificacion.py
 
 ### 2. Ejercicio principal: PPT con ML (PARA IMPLEMENTAR)
 
-**Este es TU ejercicio principal. Debes implementarlo desde cero.**
+**Este es TU ejercicio principal. Debes implementarlo desde cero usando tus datos reales.**
 
 El archivo `04_ejercicio_ppt_ALUMNO.py` tiene la estructura básica con TODOs.
 
+**REQUISITO PREVIO**:
+- Debes tener un CSV con tus partidas contra compañeros (mínimo 100 rondas)
+- Formato necesario:
+  ```csv
+  numero_ronda,jugada_jugador,jugada_oponente
+  1,piedra,papel
+  2,tijera,tijera
+  3,papel,piedra
+  ...
+  ```
+- Si no tienes suficientes datos: ¡juega más partidas con tus compañeros!
+
 **Tu tarea**:
-1. Generar datos de práctica:
-   ```bash
-   python generar_datos_ppt.py
-   ```
+1. Preparar tu CSV con datos reales de partidas
 
 2. Implementar todas las funciones marcadas con `TODO` en:
    ```bash
@@ -38,7 +47,7 @@ El archivo `04_ejercicio_ppt_ALUMNO.py` tiene la estructura básica con TODOs.
    ```
 
 3. El ejercicio debe:
-   - Cargar datos de partidas
+   - Cargar TUS datos de partidas
    - Generar features (aplicar Clase 06)
    - Entrenar múltiples modelos (KNN, Decision Tree, Random Forest)
    - Comparar resultados

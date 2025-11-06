@@ -9,8 +9,7 @@ Contenido:
 01_train_test_split.py: División correcta de datos
 02_regresion_lineal.py: Modelos de regresión
 03_clasificacion.py: KNN y Decision Trees
-04_ejercicio_ppt_ALUMNO.py: Ejercicio para implementar (PPT)
-generar_datos_ppt.py: Generador de datasets de práctica
+04_ejercicio_ppt_ALUMNO.py: Ejercicio para implementar (PPT con tus datos reales)
 
 Conceptos clave:
 ---------------
@@ -19,4 +18,6 @@ Conceptos clave:
 - Evaluación (accuracy, confusion matrix, MSE, R²)
 - Overfitting vs Underfitting
 - Comparación de algoritmos
+
+NOTA: Para el ejercicio 04, necesitas tus propios datos de partidas PPT.
 """

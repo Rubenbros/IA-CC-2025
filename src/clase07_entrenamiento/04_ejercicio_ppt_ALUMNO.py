@@ -4,21 +4,28 @@ EJERCICIO PARA ALUMNOS: Entrenar Modelo para Piedra, Papel o Tijera
 
 OBJETIVO:
 Aplicar TODO lo aprendido en esta clase para crear un modelo que prediga
-la próxima jugada del oponente en PPT.
+la próxima jugada del oponente en PPT usando tus DATOS REALES de partidas.
+
+REQUISITOS PREVIOS:
+- Debes tener un CSV con datos de tus partidas contra compañeros
+- El CSV debe tener al menos estas columnas:
+  * jugada_jugador (tu jugada: piedra/papel/tijera)
+  * jugada_oponente (jugada del oponente: piedra/papel/tijera)
+  * numero_ronda (número de ronda: 1, 2, 3, ...)
 
 TAREAS:
-1. Generar datos de práctica (usar generar_datos_ppt.py)
+1. Usar tus datos reales de partidas (mínimo 100 rondas)
 2. Crear función para generar features básicas
 3. Preparar datos con train/test split
 4. Entrenar múltiples modelos (KNN, Decision Tree, Random Forest)
 5. Comparar resultados
 6. Implementar un jugador IA que use el mejor modelo
 
-REQUISITOS:
+OBJETIVO:
 - Lograr >50% accuracy (mejor que aleatorio 33%)
 - Comparar al menos 3 modelos diferentes
 - Mostrar confusion matrix
-- Implementar clase JugadorIA
+- (Bonus) Implementar clase JugadorIA
 
 ¡BUENA SUERTE!
 """
@@ -116,28 +123,36 @@ class PPTFeatureGenerator:
 # PARTE 2: PREPARAR DATOS
 # =============================================================================
 
-def cargar_y_preparar_datos(archivo_csv='datos_ppt_basico.csv'):
+def cargar_y_preparar_datos(archivo_csv):
     """
     Carga datos de partidas y genera features
 
+    Args:
+        archivo_csv: Ruta a TU archivo CSV con datos de partidas
+                     Debe tener columnas: jugada_jugador, jugada_oponente, numero_ronda
+
     TODO: Implementa esta función
     1. Cargar CSV con pandas
-    2. Para cada ronda, generar features basadas en historial previo
-    3. Target = jugada actual del oponente
-    4. Retornar X (features), y (target)
+    2. Verificar que tiene las columnas necesarias
+    3. Para cada ronda, generar features basadas en historial previo
+    4. Target = jugada actual del oponente
+    5. Retornar X (features), y (target)
 
-    PISTA: El CSV debe tener columnas:
-    - jugada_jugador
-    - jugada_oponente
-    - numero_ronda
+    IMPORTANTE: Usa solo el historial HASTA cada ronda (no hacer trampa)
     """
     print("=" * 70)
     print("PASO 1: CARGAR Y PREPARAR DATOS")
     print("=" * 70)
 
-    # TODO: Cargar CSV
+    # TODO: Cargar TU CSV
     # TU CÓDIGO AQUÍ
     # df = pd.read_csv(archivo_csv)
+
+    # TODO: Verificar columnas
+    # columnas_necesarias = ['jugada_jugador', 'jugada_oponente', 'numero_ronda']
+    # if not all(col in df.columns for col in columnas_necesarias):
+    #     print(f"ERROR: El CSV debe tener columnas: {columnas_necesarias}")
+    #     return None, None
 
     # TODO: Generar features para cada ronda
     # TU CÓDIGO AQUÍ
@@ -295,7 +310,7 @@ def main():
     Flujo completo del ejercicio
 
     TODO: Implementa el flujo completo:
-    1. Generar datos (si no existen, usa generar_datos_ppt.py)
+    1. Especificar ruta a TU archivo CSV con datos reales
     2. Cargar y preparar datos
     3. Train/test split
     4. Entrenar y comparar modelos
@@ -306,10 +321,13 @@ def main():
     print("EJERCICIO: ENTRENAR MODELO PARA PPT")
     print("█" * 35)
 
-    # TODO: Verifica que existe el CSV de datos
-    # Si no existe, instrucciones para generarlo:
-    print("\n⚠️  IMPORTANTE: Primero genera datos ejecutando:")
-    print("    python generar_datos_ppt.py")
+    # TODO: Especifica la ruta a TU CSV con datos de partidas
+    # Ejemplo: archivo_csv = 'mis_partidas_ppt.csv'
+    # archivo_csv = '???'  # ← Cambia esto
+
+    print("\n⚠️  IMPORTANTE: Debes tener tus datos de partidas en CSV")
+    print("    Mínimo 100 rondas jugadas contra compañeros")
+    print("    Columnas necesarias: jugada_jugador, jugada_oponente, numero_ronda")
     print()
 
     # TODO: Implementa el flujo completo aquí
@@ -327,8 +345,14 @@ if __name__ == "__main__":
     print("=" * 70)
     print("INSTRUCCIONES")
     print("=" * 70)
-    print("\n1. Primero genera datos:")
-    print("   python generar_datos_ppt.py")
+    print("\n1. ANTES DE EMPEZAR:")
+    print("   - Debes tener un CSV con tus partidas (mínimo 100 rondas)")
+    print("   - Si no tienes datos, juega más partidas con compañeros")
+    print("   - Formato CSV necesario:")
+    print("     numero_ronda,jugada_jugador,jugada_oponente")
+    print("     1,piedra,papel")
+    print("     2,tijera,tijera")
+    print("     ...")
     print("\n2. Implementa todas las funciones marcadas con TODO")
     print("\n3. Ejecuta este script:")
     print("   python 04_ejercicio_ppt_ALUMNO.py")
