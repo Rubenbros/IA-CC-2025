@@ -379,10 +379,47 @@ def ejemplo_metricas_detalladas():
     print("-" * 70)
     print("\n" + classification_report(y_test, y_pred))
 
-    print(" Métricas por clase:")
-    print("  - Precision: De las que predije X, cuántas eran X")
-    print("  - Recall:    De las que eran X, cuántas detecté")
-    print("  - F1-score:  Media armónica de precision y recall")
+    print(" Explicación detallada de métricas:")
+    print("\n PRECISION (por clase):")
+    print("   'De todas las veces que predije X, ¿cuántas eran realmente X?'")
+    print("   Ejemplo: Si predije 'manzana' 10 veces y 8 eran manzanas → 80%")
+    print("   Importante cuando: Los falsos positivos son malos")
+    print("                      (Ej: clasificar email bueno como spam)")
+
+    print("\n RECALL (por clase):")
+    print("   'De todas las X reales, ¿cuántas detecté?'")
+    print("   Ejemplo: Si hay 10 manzanas y detecté 9 → 90%")
+    print("   Importante cuando: Los falsos negativos son malos")
+    print("                      (Ej: no detectar un fraude)")
+
+    print("\n F1-SCORE:")
+    print("   Media armónica de precision y recall")
+    print("   F1 = 2 × (precision × recall) / (precision + recall)")
+    print("   Balance entre precision y recall")
+
+    print("\n SUPPORT:")
+    print("   Cuántas instancias reales hay de cada clase en test")
+
+    # Ejemplo manual con la confusion matrix
+    print("\n CÁLCULO MANUAL (ejemplo con 'manzana'):")
+    # Total predicciones de manzana (columna 0)
+    pred_manzana = cm[:, 0].sum()
+    # Total reales de manzana (fila 0)
+    real_manzana = cm[0, :].sum()
+    # Correctos (diagonal)
+    correctos_manzana = cm[0, 0]
+
+    if pred_manzana > 0:
+        precision_manzana = correctos_manzana / pred_manzana
+        print(f"   Precision = {correctos_manzana}/{pred_manzana} = {precision_manzana:.2f}")
+
+    if real_manzana > 0:
+        recall_manzana = correctos_manzana / real_manzana
+        print(f"   Recall    = {correctos_manzana}/{real_manzana} = {recall_manzana:.2f}")
+
+    if pred_manzana > 0 and real_manzana > 0:
+        f1_manzana = 2 * (precision_manzana * recall_manzana) / (precision_manzana + recall_manzana)
+        print(f"   F1-score  = 2 × ({precision_manzana:.2f} × {recall_manzana:.2f}) / ({precision_manzana:.2f} + {recall_manzana:.2f}) = {f1_manzana:.2f}")
 
 
 def errores_comunes():

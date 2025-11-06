@@ -242,6 +242,73 @@ Output:
     accuracy                           0.85       150
 ```
 
+**¿Qué significa cada métrica?**
+
+Para entenderlo, usa esta matriz de confusión como ejemplo:
+
+```
+                PREDICHO
+           piedra  papel  tijera
+REAL piedra   45      3       2     (50 total)
+     papel     2     40       8     (50 total)
+     tijera    1      7      42     (50 total)
+```
+
+**PRECISION** (Precisión por clase):
+> "De todas las veces que predije X, ¿cuántas eran realmente X?"
+
+- **Precision de piedra = 45/(45+2+1) = 45/48 = 0.94**
+  - De 48 veces que predije "piedra", 45 eran piedra → 94% correcto
+  - "Cuando digo piedra, casi siempre acierto"
+
+- **Precision de papel = 40/(3+40+7) = 40/50 = 0.80**
+  - De 50 veces que predije "papel", 40 eran papel → 80% correcto
+
+**RECALL** (Exhaustividad por clase):
+> "De todas las X reales, ¿cuántas detecté?"
+
+- **Recall de piedra = 45/(45+3+2) = 45/50 = 0.90**
+  - De 50 piedras reales, detecté 45 → 90%
+  - "Detecto 9 de cada 10 piedras"
+
+- **Recall de papel = 40/(2+40+8) = 40/50 = 0.80**
+  - De 50 papeles reales, detecté 40 → 80%
+
+**F1-SCORE**:
+> "Media armónica de precision y recall"
+
+```
+F1 = 2 × (precision × recall) / (precision + recall)
+```
+
+- **F1 de piedra = 2 × (0.94 × 0.90) / (0.94 + 0.90) = 0.92**
+- Balance entre precision y recall
+- Útil cuando quieres una única métrica por clase
+
+**SUPPORT**:
+> "Cuántas instancias reales hay de cada clase en el test set"
+
+- Support de piedra = 50 → hay 50 piedras en test
+
+**ACCURACY** (al final):
+> "Precisión global = (45+40+42)/150 = 0.85"
+
+---
+
+**¿Cuándo importa cada métrica?**
+
+| Métrica | Cuándo importa más |
+|---------|-------------------|
+| **Precision** | Cuando los **falsos positivos** son malos<br>Ej: Spam → No quiero que emails buenos vayan a spam |
+| **Recall** | Cuando los **falsos negativos** son malos<br>Ej: Diagnóstico cáncer → No quiero perder ningún caso |
+| **F1-Score** | Cuando quieres balance entre ambos |
+| **Accuracy** | Cuando todas las clases importan igual |
+
+**Ejemplo PPT**:
+- Si precision de "piedra" es baja → Muchas veces predigo piedra cuando no es
+- Si recall de "piedra" es bajo → Me pierdo muchas piedras reales
+- En PPT, normalmente nos importa accuracy global (todas las jugadas valen igual)
+
 ### Métricas para Regresión
 
 #### Mean Squared Error (MSE)
