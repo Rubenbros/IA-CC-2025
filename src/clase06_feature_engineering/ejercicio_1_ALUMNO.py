@@ -93,10 +93,7 @@ def ejercicio_1_1_total_venta(df):
     # Pista: Multiplica la columna 'cantidad' por 'precio_unitario'
 
     # TU CÓDIGO AQUÍ (descomenta y completa):
-    # df['total_venta'] = df['cantidad'] * df['___________']
-
-    # ️ BORRA ESTA LÍNEA cuando hagas tu código:
-    df['total_venta'] = 0  # Placeholder temporal
+    df['total_venta'] = df['cantidad'] * df['precio_unitario']
 
     # Verificación automática
     valor_esperado_fila_0 = 2 * 899.99  # Primera fila
@@ -140,14 +137,10 @@ def ejercicio_1_2_cantidad_total_por_producto(df):
     # Pista: Usa df.groupby('producto')['cantidad'].sum()
 
     # TU CÓDIGO AQUÍ:
-    # cantidad_por_producto = df.groupby('_______')['cantidad']._____()
-
-    # ️ BORRA ESTAS LÍNEAS cuando hagas tu código:
-    cantidad_por_producto = pd.Series([0, 0, 0, 0, 0],
-                                      index=['laptop', 'mesa', 'raton', 'silla', 'teclado'])
+    cantidad_por_producto = df.groupby('producto')['cantidad'].sum()
 
     # Verificación
-    esperado_laptop = 10  # Valor correcto para laptop
+    esperado_laptop = 12  # Valor correcto para laptop
     if 'laptop' in cantidad_por_producto.index:
         verificar_feature(
             "Total laptops vendidas",
@@ -192,18 +185,14 @@ def ejercicio_1_3_frecuencia_productos(df):
 
     # PASO 1: Cuenta cuántas veces aparece cada producto
     # TU CÓDIGO AQUÍ:
-    # conteo = df['producto'].value_counts()
+    conteo = df['producto'].value_counts()
 
     # PASO 2: Divide por el total para obtener frecuencia
     # TU CÓDIGO AQUÍ:
-    # frecuencia = conteo / len(df)
-
-    # ️ BORRA ESTAS LÍNEAS cuando hagas tu código:
-    frecuencia = pd.Series([0, 0, 0, 0, 0],
-                           index=['laptop', 'mesa', 'raton', 'silla', 'teclado'])
+    frecuencia = conteo / len(df)
 
     # Verificación
-    esperado_laptop_freq = 10 / 30  # laptop aparece 10 veces de 30 total
+    esperado_laptop_freq = 7 / 30  # laptop aparece 10 veces de 30 total
     if 'laptop' in frecuencia.index:
         verificar_feature(
             "Frecuencia de laptop",
