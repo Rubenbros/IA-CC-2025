@@ -105,35 +105,234 @@ print(f"Datos de test: {len(X_test)}")
 
 ## Tipos de Modelos
 
+En Machine Learning, los modelos se agrupan según el **tipo de predicción** que hacen. Los dos tipos principales son:
+
 ### 1. Regresión (predecir números)
 
-**Cuándo usar**: Cuando quieres predecir un valor numérico continuo.
+**Definición**: Modelos que predicen un **valor numérico continuo**.
 
-**Ejemplos**:
-- Predecir precio de una casa (100,000€, 250,000€, etc.)
-- Predecir temperatura mañana (18.5°C, 22.3°C, etc.)
-- Predecir ventas del mes próximo (1250 unidades)
+**Cuándo usar**: Cuando tu variable objetivo (lo que quieres predecir) puede tomar cualquier valor numérico en un rango.
 
-**Algoritmos comunes**:
-- Regresión Lineal
-- Regresión Polinomial
-- Random Forest Regressor
+**Características**:
+- La salida es un número decimal o entero
+- Puede haber infinitos valores posibles
+- El modelo aprende una función matemática que mapea inputs → número
+
+**Ejemplos del mundo real**:
+- **Precio de una casa**: 150,000€, 250,500€, 320,750€
+  - Features: metros cuadrados, habitaciones, ubicación
+  - Target: precio (número continuo)
+- **Temperatura de mañana**: 18.5°C, 22.3°C, 15.8°C
+  - Features: temperatura hoy, presión, humedad
+  - Target: temperatura (número continuo)
+- **Ventas del próximo mes**: 1250 unidades, 1875 unidades
+  - Features: ventas anteriores, promociones, temporada
+  - Target: cantidad vendida (número)
+
+**Analogía**: Es como pedir a alguien "¿Cuánto pesará el bebé al nacer?" → La respuesta es un número específico (3.2 kg, 3.5 kg, etc.)
+
+#### Algoritmos comunes de Regresión:
+
+**a) Regresión Lineal** (`LinearRegression`)
+- **Idea**: Traza una línea recta que mejor se ajuste a los datos
+- **Fórmula**: `y = mx + b` (como en matemáticas)
+- **Cuándo usar**: Cuando la relación es aproximadamente lineal
+- **Ejemplo**: Predecir precio según metros cuadrados (más metros → más caro)
+
+```python
+from sklearn.linear_model import LinearRegression
+modelo = LinearRegression()
+modelo.fit(X_train, y_train)
+```
+
+**b) Regresión Polinomial** (`PolynomialFeatures + LinearRegression`)
+- **Idea**: Curvas en lugar de líneas rectas
+- **Fórmula**: `y = ax² + bx + c`
+- **Cuándo usar**: Cuando la relación no es lineal (ej: crecimiento que acelera)
+
+**c) Random Forest Regressor** (`RandomForestRegressor`)
+- **Idea**: Muchos árboles de decisión votando un número
+- **Cuándo usar**: Relaciones complejas, muchas features
+- **Ventaja**: Captura patrones no lineales complejos
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+modelo = RandomForestRegressor(n_estimators=100)
+modelo.fit(X_train, y_train)
+```
+
+**d) Support Vector Regression (SVR)**
+- **Idea**: Encuentra un "tubo" que contenga la mayoría de puntos
+- **Cuándo usar**: Datos con ruido, relaciones complejas
+
+---
 
 ### 2. Clasificación (predecir categorías)
 
-**Cuándo usar**: Cuando quieres predecir una categoría o clase.
+**Definición**: Modelos que predicen una **categoría o etiqueta discreta**.
 
-**Ejemplos**:
-- Email es spam o no spam (2 clases)
-- Reconocer dígitos 0-9 (10 clases)
-- **Predecir jugada en PPT** (3 clases: piedra, papel, tijera)
+**Cuándo usar**: Cuando tu variable objetivo es una clase o grupo específico (NO un número continuo).
 
-**Algoritmos comunes**:
-- K-Nearest Neighbors (KNN)
-- Decision Trees (Árboles de Decisión)
-- Random Forest
-- Logistic Regression
-- Support Vector Machines (SVM)
+**Características**:
+- La salida es una etiqueta o clase
+- Número finito de opciones posibles
+- El modelo aprende fronteras de decisión entre clases
+
+**Tipos de clasificación**:
+1. **Clasificación binaria**: Solo 2 clases
+   - Spam vs No spam
+   - Enfermo vs Sano
+   - Aprobar vs Reprobar
+
+2. **Clasificación multiclase**: 3+ clases
+   - Dígitos 0-9 (10 clases)
+   - Tipos de flores (3 clases)
+   - **Piedra, Papel o Tijera** (3 clases) ← Nuestro proyecto
+
+**Ejemplos del mundo real**:
+- **Email spam o no spam**
+  - Features: palabras clave, remitente, enlaces
+  - Target: "spam" o "no spam" (2 clases)
+- **Reconocer dígitos escritos a mano**
+  - Features: píxeles de la imagen
+  - Target: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (10 clases)
+- **Diagnóstico médico**
+  - Features: síntomas, edad, análisis
+  - Target: "saludable", "gripe", "neumonía" (3 clases)
+- **Predecir jugada en PPT**
+  - Features: historial, frecuencias, rachas
+  - Target: "piedra", "papel", "tijera" (3 clases)
+
+**Analogía**: Es como preguntar "¿De qué color es esta fruta?" → La respuesta es una categoría (rojo, verde, amarillo), NO un número.
+
+#### Algoritmos comunes de Clasificación:
+
+**a) K-Nearest Neighbors (KNN)** (`KNeighborsClassifier`)
+- **Idea**: "Dime con quién andas y te diré quién eres"
+- **Cómo funciona**:
+  1. Busca los K ejemplos más similares en el entrenamiento
+  2. Mira qué clase es más común entre esos K vecinos
+  3. Predice esa clase
+- **Ejemplo**: Si los 5 vecinos más cercanos son [piedra, piedra, papel, piedra, tijera] → predice "piedra"
+- **Cuándo usar**: Patrones locales, fronteras irregulares
+- **Hiperparámetro clave**: `n_neighbors` (cuántos vecinos considerar)
+
+```python
+from sklearn.neighbors import KNeighborsClassifier
+modelo = KNeighborsClassifier(n_neighbors=5)
+modelo.fit(X_train, y_train)
+```
+
+**b) Decision Trees (Árboles de Decisión)** (`DecisionTreeClassifier`)
+- **Idea**: Serie de preguntas Si-Entonces
+- **Cómo funciona**:
+  ```
+  ¿freq_piedra > 0.4?
+  ├─ SÍ: ¿ultima_jugada = piedra?
+  │  ├─ SÍ: Predecir PAPEL
+  │  └─ NO: Predecir PIEDRA
+  └─ NO: Predecir TIJERA
+  ```
+- **Cuándo usar**: Quieres interpretabilidad, capturar reglas
+- **Ventaja**: Muy fácil de visualizar y explicar
+- **Desventaja**: Propenso a overfitting
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+modelo = DecisionTreeClassifier(max_depth=5)
+modelo.fit(X_train, y_train)
+```
+
+**c) Random Forest** (`RandomForestClassifier`)
+- **Idea**: Bosque de muchos árboles votando
+- **Cómo funciona**:
+  1. Crea 100 árboles diferentes (cada uno ve datos aleatorios)
+  2. Cada árbol vota por una clase
+  3. La clase más votada gana
+- **Ejemplo**: 60 árboles dicen "piedra", 30 dicen "papel", 10 dicen "tijera" → predice "piedra"
+- **Cuándo usar**: Cuando quieres alta precisión sin preocuparte mucho por hiperparámetros
+- **Ventaja**: Muy robusto, reduce overfitting, excelente rendimiento
+- **Desventaja**: Más lento, menos interpretable
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+modelo = RandomForestClassifier(n_estimators=100, max_depth=5)
+modelo.fit(X_train, y_train)
+```
+
+**d) Logistic Regression** (`LogisticRegression`)
+- **Nombre confuso**: A pesar del nombre, es CLASIFICACIÓN, no regresión
+- **Idea**: Calcula probabilidad de cada clase y elige la más alta
+- **Cómo funciona**: Usa función logística para mapear features → probabilidad [0, 1]
+- **Ejemplo**: P(piedra)=0.6, P(papel)=0.3, P(tijera)=0.1 → predice "piedra"
+- **Cuándo usar**: Clasificación binaria, cuando quieres probabilidades
+- **Ventaja**: Rápido, simple, da probabilidades
+
+```python
+from sklearn.linear_model import LogisticRegression
+modelo = LogisticRegression()
+modelo.fit(X_train, y_train)
+```
+
+**e) Support Vector Machines (SVM)** (`SVC`)
+- **Idea**: Encuentra el "mejor hiperplano" que separa las clases
+- **Cómo funciona**: Maximiza el margen entre clases
+- **Cuándo usar**: Datasets pequeños-medianos, clasificación binaria
+- **Ventaja**: Efectivo en espacios de alta dimensión
+- **Desventaja**: Lento con muchos datos
+
+```python
+from sklearn.svm import SVC
+modelo = SVC(kernel='rbf')
+modelo.fit(X_train, y_train)
+```
+
+**f) Naive Bayes** (`GaussianNB`, `MultinomialNB`)
+- **Idea**: Usa teorema de Bayes (probabilidades condicionales)
+- **Cuándo usar**: Clasificación de texto (spam, sentimientos)
+- **Ventaja**: Muy rápido, funciona bien con pocas muestras
+- **Desventaja**: Asume que features son independientes (raramente cierto)
+
+---
+
+### ¿Cómo elegir entre Regresión y Clasificación?
+
+**Pregunta clave**: ¿Tu variable objetivo es un número continuo o una categoría?
+
+| Pregunta | Respuesta | Tipo |
+|----------|-----------|------|
+| ¿Cuánto costará? | 125,000€ | Regresión |
+| ¿Qué tipo es? | "deportivo" | Clasificación |
+| ¿Cuántos días? | 5.2 días | Regresión |
+| ¿Aprueba o reprueba? | "aprueba" | Clasificación |
+| ¿Qué temperatura? | 22.3°C | Regresión |
+| ¿Qué jugará? | "piedra" | Clasificación ← PPT |
+
+**Truco mental**:
+- Si puedes decir "entre 23 y 24" → Regresión
+- Si solo hay opciones específicas → Clasificación
+
+---
+
+### 3. Otros tipos (menciones honoríficas)
+
+Aunque en esta clase nos enfocamos en Clasificación (para PPT), existen otros tipos:
+
+**Clustering** (Agrupamiento)
+- **Qué hace**: Agrupa datos similares sin etiquetas previas
+- **Ejemplo**: Segmentar clientes por comportamiento
+- **No supervisado**: No necesita etiquetas de entrenamiento
+- **Algoritmo**: K-Means
+
+**Reducción de dimensionalidad**
+- **Qué hace**: Reduce número de features manteniendo información
+- **Ejemplo**: Visualizar datos de 100 dimensiones en 2D
+- **Algoritmo**: PCA (Principal Component Analysis)
+
+**Detección de anomalías**
+- **Qué hace**: Encuentra datos "raros" o fuera de lo común
+- **Ejemplo**: Detectar fraude en tarjetas de crédito
+- **Algoritmo**: Isolation Forest
 
 ---
 
