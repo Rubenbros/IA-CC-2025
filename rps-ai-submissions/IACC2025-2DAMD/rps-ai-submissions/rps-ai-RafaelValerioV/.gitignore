@@ -1,0 +1,52 @@
+# Material del curso (borrar antes de entregar a alumnos)
+/IA-CC-2025/
+
+# Solucion del profesor (no entregar a alumnos)
+/solucion/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Entornos virtuales
+venv/
+ENV/
+env/
+.venv/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Datos y modelos (cada alumno genera los suyos)
+# Descomenta estas lineas si NO quieres que se suban al repo:
+# data/partidas.csv
+# models/*.pkl
+
+# Sistema
+.DS_Store
+Thumbs.db

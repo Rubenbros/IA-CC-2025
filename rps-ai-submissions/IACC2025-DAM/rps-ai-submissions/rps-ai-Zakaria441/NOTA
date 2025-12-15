@@ -1,0 +1,529 @@
+============================================================
+   RPSAI - EVALUACION DE WINRATE
+============================================================
+
+Se jugaran 50 rondas contra tu modelo de IA.
+Juega de forma natural, como lo harias normalmente.
+
+✅ Modelo cargado correctamente
+Presiona ENTER para comenzar la evaluacion...
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 1 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 1/50] IA: 1V-0D-0E (Winrate: 100.0%) | Quedan: 49
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 3
+
+--- Ronda 2 ---
+Tu: T (tijera)
+IA: T (tijera)
+>>> Empate <<<
+
+[Progreso: 2/50] IA: 1V-0D-1E (Winrate: 100.0%) | Quedan: 48
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 3 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 3/50] IA: 1V-1D-1E (Winrate: 50.0%) | Quedan: 47
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 4 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 4/50] IA: 1V-1D-2E (Winrate: 50.0%) | Quedan: 46
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 5 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 5/50] IA: 1V-1D-3E (Winrate: 50.0%) | Quedan: 45
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 6 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 6/50] IA: 2V-1D-3E (Winrate: 66.7%) | Quedan: 44
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 7 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 7/50] IA: 3V-1D-3E (Winrate: 75.0%) | Quedan: 43
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 8 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 8/50] IA: 3V-1D-4E (Winrate: 75.0%) | Quedan: 42
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 9 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 9/50] IA: 3V-1D-5E (Winrate: 75.0%) | Quedan: 41
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 10 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 10/50] IA: 3V-1D-6E (Winrate: 75.0%) | Quedan: 40
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 3
+
+--- Ronda 11 ---
+Tu: T (tijera)
+IA: P (piedra)
+>>> IA GANA <<<
+
+[Progreso: 11/50] IA: 4V-1D-6E (Winrate: 80.0%) | Quedan: 39
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 12 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 12/50] IA: 4V-2D-6E (Winrate: 66.7%) | Quedan: 38
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 13 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 13/50] IA: 4V-3D-6E (Winrate: 57.1%) | Quedan: 37
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 14 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 14/50] IA: 4V-4D-6E (Winrate: 50.0%) | Quedan: 36
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 15 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 15/50] IA: 4V-5D-6E (Winrate: 44.4%) | Quedan: 35
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 16 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 16/50] IA: 5V-5D-6E (Winrate: 50.0%) | Quedan: 34
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 17 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 17/50] IA: 6V-5D-6E (Winrate: 54.5%) | Quedan: 33
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 18 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 18/50] IA: 6V-6D-6E (Winrate: 50.0%) | Quedan: 32
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 19 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 19/50] IA: 6V-6D-7E (Winrate: 50.0%) | Quedan: 31
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 20 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 20/50] IA: 6V-7D-7E (Winrate: 46.2%) | Quedan: 30
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 21 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 21/50] IA: 6V-8D-7E (Winrate: 42.9%) | Quedan: 29
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 22 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 22/50] IA: 7V-8D-7E (Winrate: 46.7%) | Quedan: 28
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 23 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 23/50] IA: 7V-9D-7E (Winrate: 43.8%) | Quedan: 27
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 24 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 24/50] IA: 7V-9D-8E (Winrate: 43.8%) | Quedan: 26
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 25 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 25/50] IA: 7V-10D-8E (Winrate: 41.2%) | Quedan: 25
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 26 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 26/50] IA: 7V-11D-8E (Winrate: 38.9%) | Quedan: 24
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 27 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 27/50] IA: 7V-12D-8E (Winrate: 36.8%) | Quedan: 23
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 28 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 28/50] IA: 7V-12D-9E (Winrate: 36.8%) | Quedan: 22
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 29 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 29/50] IA: 7V-13D-9E (Winrate: 35.0%) | Quedan: 21
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 30 ---
+Tu: A (papel)
+IA: P (piedra)
+>>> Tu ganas <<<
+
+[Progreso: 30/50] IA: 7V-14D-9E (Winrate: 33.3%) | Quedan: 20
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 2
+
+--- Ronda 31 ---
+Tu: A (papel)
+IA: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 31/50] IA: 8V-14D-9E (Winrate: 36.4%) | Quedan: 19
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 32 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 32/50] IA: 8V-15D-9E (Winrate: 34.8%) | Quedan: 18
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 33 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 33/50] IA: 8V-15D-10E (Winrate: 34.8%) | Quedan: 17
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 34 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 34/50] IA: 8V-15D-11E (Winrate: 34.8%) | Quedan: 16
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 35 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 35/50] IA: 8V-16D-11E (Winrate: 33.3%) | Quedan: 15
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 36 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 36/50] IA: 8V-17D-11E (Winrate: 32.0%) | Quedan: 14
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 37 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 37/50] IA: 8V-17D-12E (Winrate: 32.0%) | Quedan: 13
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 38 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 38/50] IA: 8V-17D-13E (Winrate: 32.0%) | Quedan: 12
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 39 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 39/50] IA: 8V-17D-14E (Winrate: 32.0%) | Quedan: 11
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 40 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 40/50] IA: 8V-17D-15E (Winrate: 32.0%) | Quedan: 10
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 41 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 41/50] IA: 8V-18D-15E (Winrate: 30.8%) | Quedan: 9
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 42 ---
+Tu: P (piedra)
+IA: T (tijera)
+>>> Tu ganas <<<
+
+[Progreso: 42/50] IA: 8V-19D-15E (Winrate: 29.6%) | Quedan: 8
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 43 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 43/50] IA: 8V-19D-16E (Winrate: 29.6%) | Quedan: 7
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 44 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 44/50] IA: 8V-19D-17E (Winrate: 29.6%) | Quedan: 6
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 45 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 45/50] IA: 8V-19D-18E (Winrate: 29.6%) | Quedan: 5
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 46 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 46/50] IA: 8V-19D-19E (Winrate: 29.6%) | Quedan: 4
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 47 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 47/50] IA: 8V-19D-20E (Winrate: 29.6%) | Quedan: 3
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 48 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 48/50] IA: 8V-19D-21E (Winrate: 29.6%) | Quedan: 2
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 49 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 49/50] IA: 8V-19D-22E (Winrate: 29.6%) | Quedan: 1
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Tu jugada: 1
+
+--- Ronda 50 ---
+Tu: P (piedra)
+IA: P (piedra)
+>>> Empate <<<
+
+[Progreso: 50/50] IA: 8V-19D-23E (Winrate: 29.6%) | Quedan: 0
+
+============================================================
+   RESULTADOS FINALES
+============================================================
+
+Rondas jugadas: 50
+Victorias IA: 8
+Derrotas IA: 19
+Empates: 23
+
+WINRATE DE LA IA: 29.6%
+
+============================================================
+   NOTA MODO 1 (Winrate): 0/10
+============================================================
+
+Tabla de referencia:
+  33%- = 0  |  35% = 1  |  37% = 2  |  39% = 3
+  40% = 4   |  42% = 5  |  44% = 6  |  46% = 7
+  48% = 8   |  49% = 9  |  50%+ = 10 | 55%+ = BONUS

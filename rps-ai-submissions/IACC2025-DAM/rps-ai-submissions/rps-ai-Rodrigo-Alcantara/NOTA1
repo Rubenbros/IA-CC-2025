@@ -1,0 +1,219 @@
+5,5
+
+============================================================
+       PIEDRA, PAPEL O TIJERA - IA AVANZADA
+============================================================
+Comandos: 'piedra' (1), 'papel' (2), 'tijera' (3) o 'salir'
+
+------------------------------------------------------------
+ Ronda 1 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: TIJERA => DERROTA
+    📊 Eficiencia IA: 100.00% (1V - 0D - 0E)
+------------------------------------------------------------
+ Ronda 2 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 50.00% (1V - 1D - 0E)
+------------------------------------------------------------
+ Ronda 3 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 50.00% (1V - 1D - 1E)
+------------------------------------------------------------
+ Ronda 4 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 50.00% (1V - 1D - 2E)
+------------------------------------------------------------
+ Ronda 5 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PIEDRA => DERROTA
+    📊 Eficiencia IA: 66.67% (2V - 1D - 2E)
+------------------------------------------------------------
+ Ronda 6 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PIEDRA => VICTORIA
+    📊 Eficiencia IA: 50.00% (2V - 2D - 2E)
+------------------------------------------------------------
+ Ronda 7 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 50.00% (2V - 2D - 3E)
+------------------------------------------------------------
+ Ronda 8 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 40.00% (2V - 3D - 3E)
+------------------------------------------------------------
+ Ronda 9 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 40.00% (2V - 3D - 4E)
+------------------------------------------------------------
+ Ronda 10 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PIEDRA => DERROTA
+    📊 Eficiencia IA: 50.00% (3V - 3D - 4E)
+------------------------------------------------------------
+ Ronda 11 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PIEDRA => VICTORIA
+    📊 Eficiencia IA: 42.86% (3V - 4D - 4E)
+------------------------------------------------------------
+ Ronda 12 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 42.86% (3V - 4D - 5E)
+------------------------------------------------------------
+ Ronda 13 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 37.50% (3V - 5D - 5E)
+------------------------------------------------------------
+ Ronda 14 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PIEDRA => DERROTA
+    📊 Eficiencia IA: 44.44% (4V - 5D - 5E)
+------------------------------------------------------------
+ Ronda 15 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PIEDRA => VICTORIA
+    📊 Eficiencia IA: 40.00% (4V - 6D - 5E)
+------------------------------------------------------------
+ Ronda 16 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: TIJERA => DERROTA
+    📊 Eficiencia IA: 45.45% (5V - 6D - 5E)
+------------------------------------------------------------
+ Ronda 17 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 41.67% (5V - 7D - 5E)
+------------------------------------------------------------
+ Ronda 18 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 41.67% (5V - 7D - 6E)
+------------------------------------------------------------
+ Ronda 19 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PAPEL => DERROTA
+    📊 Eficiencia IA: 46.15% (6V - 7D - 6E)
+------------------------------------------------------------
+ Ronda 20 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 42.86% (6V - 8D - 6E)
+------------------------------------------------------------
+ Ronda 21 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 42.86% (6V - 8D - 7E)
+------------------------------------------------------------
+ Ronda 22 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 42.86% (6V - 8D - 8E)
+------------------------------------------------------------
+ Ronda 23 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PIEDRA => VICTORIA
+    📊 Eficiencia IA: 40.00% (6V - 9D - 8E)
+------------------------------------------------------------
+ Ronda 24 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 40.00% (6V - 9D - 9E)
+------------------------------------------------------------
+ Ronda 25 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 37.50% (6V - 10D - 9E)
+------------------------------------------------------------
+ Ronda 26 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 35.29% (6V - 11D - 9E)
+------------------------------------------------------------
+ Ronda 27 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PIEDRA => DERROTA
+    📊 Eficiencia IA: 38.89% (7V - 11D - 9E)
+------------------------------------------------------------
+ Ronda 28 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 38.89% (7V - 11D - 10E)
+------------------------------------------------------------
+ Ronda 29 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PIEDRA => VICTORIA
+    📊 Eficiencia IA: 36.84% (7V - 12D - 10E)
+------------------------------------------------------------
+ Ronda 30 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: TIJERA => DERROTA
+    📊 Eficiencia IA: 40.00% (8V - 12D - 10E)
+------------------------------------------------------------
+ Ronda 31 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 38.10% (8V - 13D - 10E)
+------------------------------------------------------------
+ Ronda 32 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 38.10% (8V - 13D - 11E)
+------------------------------------------------------------
+ Ronda 33 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 38.10% (8V - 13D - 12E)
+------------------------------------------------------------
+ Ronda 34 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 38.10% (8V - 13D - 13E)
+------------------------------------------------------------
+ Ronda 35 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PAPEL => DERROTA
+    📊 Eficiencia IA: 40.91% (9V - 13D - 13E)
+------------------------------------------------------------
+ Ronda 36 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: TIJERA => DERROTA
+    📊 Eficiencia IA: 43.48% (10V - 13D - 13E)
+------------------------------------------------------------
+ Ronda 37 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 41.67% (10V - 14D - 13E)
+------------------------------------------------------------
+ Ronda 38 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 41.67% (10V - 14D - 14E)
+------------------------------------------------------------
+ Ronda 39 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 41.67% (10V - 14D - 15E)
+------------------------------------------------------------
+ Ronda 40 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 41.67% (10V - 14D - 16E)
+------------------------------------------------------------
+ Ronda 41 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PAPEL => DERROTA
+    📊 Eficiencia IA: 44.00% (11V - 14D - 16E)
+------------------------------------------------------------
+ Ronda 42 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 44.00% (11V - 14D - 17E)
+------------------------------------------------------------
+ Ronda 43 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PIEDRA => EMPATE
+    📊 Eficiencia IA: 44.00% (11V - 14D - 18E)
+------------------------------------------------------------
+ Ronda 44 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: TIJERA => DERROTA
+    📊 Eficiencia IA: 46.15% (12V - 14D - 18E)
+------------------------------------------------------------
+ Ronda 45 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: TIJERA => VICTORIA
+    📊 Eficiencia IA: 44.44% (12V - 15D - 18E)
+------------------------------------------------------------
+ Ronda 46 >> Elige tu jugada: 1
+   Tu jugada: PIEDRA | IA: PAPEL => DERROTA
+    📊 Eficiencia IA: 46.43% (13V - 15D - 18E)
+------------------------------------------------------------
+ Ronda 47 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: TIJERA => EMPATE
+    📊 Eficiencia IA: 46.43% (13V - 15D - 19E)
+------------------------------------------------------------
+ Ronda 48 >> Elige tu jugada: 2
+   Tu jugada: PAPEL | IA: PAPEL => EMPATE
+    📊 Eficiencia IA: 46.43% (13V - 15D - 20E)
+------------------------------------------------------------
+ Ronda 49 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 44.83% (13V - 16D - 20E)
+------------------------------------------------------------
+ Ronda 50 >> Elige tu jugada: 3
+   Tu jugada: TIJERA | IA: PAPEL => VICTORIA
+    📊 Eficiencia IA: 43.33% (13V - 17D - 20E)
+
+============================================================
+                   ESTADÍSTICAS FINALES
+============================================================
+  Rondas jugadas: 50
+  Victorias del Jugador: 17
+  Victorias de la IA: 13
+  Empates: 20
+
+ EFICIENCIA FINAL DE LA IA: 43.33%
+La IA necesita más entrenamiento
+============================================================

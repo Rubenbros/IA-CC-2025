@@ -1,0 +1,522 @@
+============================================================
+   RPSAI - EVALUACIÓN DE WINRATE (MODO PREDICCIÓN)
+============================================================
+
+Se jugarán 50 rondas contra la IA (escribe 'salir' para terminar antes).
+Jugador IA inicializado con modelo entrenado.
+Presiona ENTER para comenzar la evaluación...
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 2
+
+--- Ronda 1 ---
+IA (Mi jugada): A (papel)
+Rival: A (papel)
+>>> Empate <<<
+
+[Progreso: 1/50] IA: 0V-0D-1E (Winrate: 0.0%) | Quedan: 49
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 2 ---
+IA (Mi jugada): P (piedra)
+Rival: T (tijera)
+>>> IA GANA <<<
+
+[Progreso: 2/50] IA: 1V-0D-1E (Winrate: 100.0%) | Quedan: 48
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 3 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 3/50] IA: 1V-1D-1E (Winrate: 50.0%) | Quedan: 47
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 4 ---
+IA (Mi jugada): A (papel)
+Rival: P (piedra)
+>>> IA GANA <<<
+
+[Progreso: 4/50] IA: 2V-1D-1E (Winrate: 66.7%) | Quedan: 46
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 5 ---
+IA (Mi jugada): T (tijera)
+Rival: P (piedra)
+>>> Rival gana <<<
+
+[Progreso: 5/50] IA: 2V-2D-1E (Winrate: 50.0%) | Quedan: 45
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 2
+
+--- Ronda 6 ---
+IA (Mi jugada): T (tijera)
+Rival: A (papel)
+>>> IA GANA <<<
+
+[Progreso: 6/50] IA: 3V-2D-1E (Winrate: 60.0%) | Quedan: 44
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 2
+
+--- Ronda 7 ---
+IA (Mi jugada): A (papel)
+Rival: A (papel)
+>>> Empate <<<
+
+[Progreso: 7/50] IA: 3V-2D-2E (Winrate: 60.0%) | Quedan: 43
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 8 ---
+IA (Mi jugada): T (tijera)
+Rival: T (tijera)
+>>> Empate <<<
+
+[Progreso: 8/50] IA: 3V-2D-3E (Winrate: 60.0%) | Quedan: 42
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 2
+
+--- Ronda 9 ---
+IA (Mi jugada): T (tijera)
+Rival: A (papel)
+>>> IA GANA <<<
+
+[Progreso: 9/50] IA: 4V-2D-3E (Winrate: 66.7%) | Quedan: 41
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 10 ---
+IA (Mi jugada): T (tijera)
+Rival: T (tijera)
+>>> Empate <<<
+
+[Progreso: 10/50] IA: 4V-2D-4E (Winrate: 66.7%) | Quedan: 40
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 2
+
+--- Ronda 11 ---
+IA (Mi jugada): A (papel)
+Rival: A (papel)
+>>> Empate <<<
+
+[Progreso: 11/50] IA: 4V-2D-5E (Winrate: 66.7%) | Quedan: 39
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 12 ---
+IA (Mi jugada): P (piedra)
+Rival: P (piedra)
+>>> Empate <<<
+
+[Progreso: 12/50] IA: 4V-2D-6E (Winrate: 66.7%) | Quedan: 38
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 13 ---
+IA (Mi jugada): P (piedra)
+Rival: P (piedra)
+>>> Empate <<<
+
+[Progreso: 13/50] IA: 4V-2D-7E (Winrate: 66.7%) | Quedan: 37
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 14 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 14/50] IA: 4V-3D-7E (Winrate: 57.1%) | Quedan: 36
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 15 ---
+IA (Mi jugada): T (tijera)
+Rival: T (tijera)
+>>> Empate <<<
+
+[Progreso: 15/50] IA: 4V-3D-8E (Winrate: 57.1%) | Quedan: 35
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 16 ---
+IA (Mi jugada): A (papel)
+Rival: P (piedra)
+>>> IA GANA <<<
+
+[Progreso: 16/50] IA: 5V-3D-8E (Winrate: 62.5%) | Quedan: 34
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 17 ---
+IA (Mi jugada): T (tijera)
+Rival: P (piedra)
+>>> Rival gana <<<
+
+[Progreso: 17/50] IA: 5V-4D-8E (Winrate: 55.6%) | Quedan: 33
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 18 ---
+IA (Mi jugada): T (tijera)
+Rival: P (piedra)
+>>> Rival gana <<<
+
+[Progreso: 18/50] IA: 5V-5D-8E (Winrate: 50.0%) | Quedan: 32
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 19 ---
+IA (Mi jugada): A (papel)
+Rival: P (piedra)
+>>> IA GANA <<<
+
+[Progreso: 19/50] IA: 6V-5D-8E (Winrate: 54.5%) | Quedan: 31
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 1
+
+--- Ronda 20 ---
+IA (Mi jugada): T (tijera)
+Rival: P (piedra)
+>>> Rival gana <<<
+
+[Progreso: 20/50] IA: 6V-6D-8E (Winrate: 50.0%) | Quedan: 30
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 21 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 21/50] IA: 6V-7D-8E (Winrate: 46.2%) | Quedan: 29
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 22 ---
+IA (Mi jugada): T (tijera)
+Rival: T (tijera)
+>>> Empate <<<
+
+[Progreso: 22/50] IA: 6V-7D-9E (Winrate: 46.2%) | Quedan: 28
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 23 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 23/50] IA: 6V-8D-9E (Winrate: 42.9%) | Quedan: 27
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 24 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 24/50] IA: 6V-9D-9E (Winrate: 40.0%) | Quedan: 26
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 25 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 25/50] IA: 6V-10D-9E (Winrate: 37.5%) | Quedan: 25
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 26 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 26/50] IA: 6V-11D-9E (Winrate: 35.3%) | Quedan: 24
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 27 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 27/50] IA: 6V-12D-9E (Winrate: 33.3%) | Quedan: 23
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 28 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 28/50] IA: 6V-13D-9E (Winrate: 31.6%) | Quedan: 22
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 29 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 29/50] IA: 6V-14D-9E (Winrate: 30.0%) | Quedan: 21
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 30 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 30/50] IA: 6V-15D-9E (Winrate: 28.6%) | Quedan: 20
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 31 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 31/50] IA: 6V-16D-9E (Winrate: 27.3%) | Quedan: 19
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 32 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 32/50] IA: 6V-17D-9E (Winrate: 26.1%) | Quedan: 18
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 33 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 33/50] IA: 6V-18D-9E (Winrate: 25.0%) | Quedan: 17
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 34 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 34/50] IA: 6V-19D-9E (Winrate: 24.0%) | Quedan: 16
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 35 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 35/50] IA: 6V-20D-9E (Winrate: 23.1%) | Quedan: 15
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 36 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 36/50] IA: 6V-21D-9E (Winrate: 22.2%) | Quedan: 14
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 37 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 37/50] IA: 6V-22D-9E (Winrate: 21.4%) | Quedan: 13
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 38 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 38/50] IA: 6V-23D-9E (Winrate: 20.7%) | Quedan: 12
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 39 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 39/50] IA: 6V-24D-9E (Winrate: 20.0%) | Quedan: 11
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 40 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 40/50] IA: 6V-25D-9E (Winrate: 19.4%) | Quedan: 10
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 41 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 41/50] IA: 6V-26D-9E (Winrate: 18.8%) | Quedan: 9
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 42 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 42/50] IA: 6V-27D-9E (Winrate: 18.2%) | Quedan: 8
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 43 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 43/50] IA: 6V-28D-9E (Winrate: 17.6%) | Quedan: 7
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 44 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 44/50] IA: 6V-29D-9E (Winrate: 17.1%) | Quedan: 6
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 45 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 45/50] IA: 6V-30D-9E (Winrate: 16.7%) | Quedan: 5
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 46 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 46/50] IA: 6V-31D-9E (Winrate: 16.2%) | Quedan: 4
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 47 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 47/50] IA: 6V-32D-9E (Winrate: 15.8%) | Quedan: 3
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 48 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 48/50] IA: 6V-33D-9E (Winrate: 15.4%) | Quedan: 2
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 49 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 49/50] IA: 6V-34D-9E (Winrate: 15.0%) | Quedan: 1
+
+[1/p] Piedra  [2/a] Papel  [3/t] Tijera
+Jugada del Rival (Tu Amigo): 3
+
+--- Ronda 50 ---
+IA (Mi jugada): A (papel)
+Rival: T (tijera)
+>>> Rival gana <<<
+
+[Progreso: 50/50] IA: 6V-35D-9E (Winrate: 14.6%) | Quedan: 0
+
+============================================================
+   RESULTADOS FINALES
+============================================================
+
+Rondas jugadas: 50
+Victorias IA: 6
+Derrotas IA: 35
+Empates: 9
+
+WINRATE DE LA IA: 14.6% (Calculado sobre decisivas)
+
+============================================================
+   NOTA MODO 1 (Winrate): 0/10
+============================================================

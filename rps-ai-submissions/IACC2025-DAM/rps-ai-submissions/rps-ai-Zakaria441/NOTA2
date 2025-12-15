@@ -1,0 +1,17 @@
+# Corrección Modo 2 - Revisión de Código
+## Zakaria Bourahla
+
+### Recogida de datos (30%) - 5/10
+379 rondas es un volumen aceptable. El CSV incluye columnas adicionales (timestamp, tiempo_reaccion_ms, sesion, resultado). Sin embargo, el DATOS.md está completamente vacío - no has documentado nada del proceso de recogida, ni el método usado, ni las estadísticas del dataset. Esto es una carencia importante ya que la documentación es parte fundamental del trabajo científico.
+
+### Feature Engineering (30%) - 7/10
+El sistema de features está bien estructurado con lag features y frecuencias en múltiples ventanas temporales. Incluyes detección de rachas y algunos patrones de comportamiento. Sin embargo, muchas de las features son bastante estándar y siguen patrones comunes. Falta originalidad en el enfoque - hubiera sido interesante ver features más innovadoras adaptadas específicamente a tu dataset.
+
+### Modelo (40%) - 7/10
+Pruebas varios modelos (RandomForest, GradientBoosting, DecisionTree) con algunos hiperparámetros ajustados. El código está organizado y genera métricas de evaluación. La clase JugadorIA implementa la generación de features en tiempo real.
+
+Sin embargo, no hay un análisis profundo de por qué un modelo funciona mejor que otro, ni experimentación sistemática con hiperparámetros (grid search, cross-validation). El enfoque es más bien prueba y error.
+
+## NOTA MODO 2: 6.5/10
+
+*Nota: Trabajo correcto pero con margen de mejora significativo en documentación y análisis.*

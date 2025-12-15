@@ -1,0 +1,13 @@
+# Corrección Modo 2 - Revisión de Código
+## David Laborda, David Ultra, Sergio Lainez
+
+### Recogida de datos (30%) - 6.5/10
+Habéis recogido 200 rondas entre los tres, lo cual está bien como volumen. El método manual (libreta y transcripción) puede introducir algunos errores pero habéis sido cuidadosos con el formato. El CSV tiene las tres columnas básicas correctamente estructuradas - hubiera sido interesante capturar quién jugaba contra quién o algún identificador de sesión para poder analizar patrones por oponente.
+
+### Feature Engineering (30%) - 6/10
+El código de features está bastante completo con los lags implementados correctamente. Echo en falta alguna feature adicional propia como frecuencias acumuladas o detección de patrones de alternancia. Os habéis quedado con lo que venía en la plantilla sin añadir nada nuevo que pudiera capturar mejor el comportamiento del oponente.
+
+### Modelo (40%) - 7/10
+Bien la comparación de los tres modelos (KNN, DecisionTree, RandomForest) con sus accuracy. El código de entrenamiento está limpio y se guarda el mejor modelo correctamente. Falta experimentar con hiperparámetros - todos los modelos usan valores por defecto.
+
+## NOTA MODO 2: 6.5/10

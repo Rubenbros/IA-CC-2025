@@ -1,0 +1,27 @@
+# Corrección Modo 2 - Revisión de Código
+## David Casaus, Lorenzo Paris
+
+### Recogida de datos (30%) - 7/10
+519 rondas es un volumen muy bueno de datos. El método manual (jugar y apuntar) es válido aunque propenso a errores. Positivo que hayáis jugado tanto entre vosotros como contra la IA para tener variedad. El CSV solo tiene las columnas básicas pero el volumen compensa. Falta completar las estadísticas en DATOS.md (total de rondas, sesiones, etc.).
+
+### Feature Engineering (30%) - 9/10
+Excelente trabajo en esta sección. El código implementa features muy avanzadas:
+- Secuencias de 7 jugadas anteriores de ambos jugadores
+- Frecuencias en múltiples ventanas (5, 10, 20 y todas)
+- Detección de ciclos de longitud 2, 3 y 4
+- Detección de rachas
+- Tendencias (últimas 5 vs anteriores 5)
+- Matriz de transición de Markov
+
+Esto demuestra un buen entendimiento de cómo capturar patrones de comportamiento humano.
+
+### Modelo (40%) - 7.5/10
+Muy bien la elección de GradientBoostingClassifier con hiperparámetros ajustados (no por defecto). La arquitectura de múltiples estrategias de predicción (Markov, ciclos, explotación de sesgos, meta-predicción) es sofisticada.
+
+El problema que hace que falle en la evaluación está en la función `decidir_jugada()`: las features que se generan en predicción no coinciden exactamente con las de entrenamiento. En `generar_features()` se crean 7+7+7+12+3+1+3 = 40 features, pero en `decidir_jugada()` la reconstrucción manual puede tener diferencias sutiles. El `try/except: pass` oculta estos errores silenciosamente.
+
+Recomendación: extraer la lógica de features a una función común que se use tanto en entrenamiento como en predicción para garantizar consistencia.
+
+## NOTA MODO 2: 8/10
+
+*Nota: El código muestra un nivel de complejidad y comprensión muy por encima de la media. El bajo rendimiento en Modo 1 se debe a un bug técnico, no a falta de trabajo o comprensión.*

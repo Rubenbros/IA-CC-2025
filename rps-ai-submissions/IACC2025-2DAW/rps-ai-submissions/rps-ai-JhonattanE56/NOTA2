@@ -1,0 +1,13 @@
+# Corrección Modo 2 - Revisión de Código
+## Jhonattan Elías Prieto Morillo
+
+### Recogida de datos (30%) - 9/10
+Muy buen trabajo aquí. Has creado un programa propio para jugar con contador de tiempo, y el CSV incluye datos adicionales muy útiles: tiempo de reacción de ambos jugadores, timestamp, sesión y resultado. La documentación en DATOS.md explica bien el proceso y el porqué de cada dato adicional. 203 rondas es un buen volumen.
+
+### Feature Engineering (30%) - 5.5/10
+Aquí es donde flojea el trabajo. Tienes datos muy ricos (tiempos de reacción, sesiones) pero no los aprovechas en las features. El tiempo de reacción es oro - una jugada rápida suele ser instintiva/repetida mientras que una lenta indica que el jugador está pensando en cambiar. No has creado ninguna feature que use estos datos extra.
+
+### Modelo (40%) - 6.5/10
+El código de entrenamiento está bien estructurado y la comparación de modelos es correcta. El problema es que hay una inconsistencia entre las features de entrenamiento y predicción que hace que el modelo falle en la evaluación. Asegúrate de que crear_features() genera exactamente las mismas columnas siempre.
+
+## NOTA MODO 2: 7/10

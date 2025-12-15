@@ -1,0 +1,28 @@
+# Corrección Modo 2 - Revisión de Código
+## Lilja Svarva Antonsen
+
+### Recogida de datos (30%) - 8.5/10
+Muy buen volumen de datos: 578 rondas recogidas con programa propio. El CSV incluye muchas columnas pre-calculadas (frecuencias, rachas, historial de movimientos) lo cual muestra planificación. La documentación en DATOS.md es excelente, incluyendo la descripción de tests para detectar data leakage - esto demuestra comprensión de problemas comunes en ML. IA general entrenada contra múltiples oponentes (amigos + partidas online).
+
+### Feature Engineering (30%) - 7.5/10
+Buen conjunto de features aunque muchas vienen pre-calculadas del CSV. Las features derivadas añadidas en el código son interesantes:
+- opp_move_variance y opp_move_entropy para medir predictibilidad
+- freq_gap e is_predictable para detectar sesgos claros
+- streak_outcome_interaction como feature de interacción
+
+El enfoque de pre-calcular features en la recogida tiene pros y contras: facilita el entrenamiento pero puede limitar la flexibilidad para experimentar con nuevas features.
+
+### Modelo (40%) - 8/10
+Implementación sólida con buenos ajustes:
+- RandomForest (600 estimators, max_depth=25) y GradientBoosting con hiperparámetros ajustados
+- JugadorIA con estrategia sofisticada de múltiples capas:
+  - Detección de sesgo adaptativo con ventanas múltiples (8, 10, 12 rondas)
+  - Umbrales adaptativos según cantidad de datos disponibles
+  - Uso de predict_proba con umbral de confianza (36%)
+  - 8% de randomización para mantener impredecibilidad
+
+Las features en predicción coinciden correctamente con las de entrenamiento. La estrategia de prioridades (sesgo > modelo > frecuencia > aleatorio) está bien pensada.
+
+## NOTA MODO 2: 8/10
+
+*Nota: Trabajo completo y bien estructurado. La documentación sobre data leakage y la estrategia de múltiples ventanas demuestran buen entendimiento del problema.*

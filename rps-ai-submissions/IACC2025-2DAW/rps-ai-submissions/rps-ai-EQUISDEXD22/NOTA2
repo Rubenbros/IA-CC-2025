@@ -1,0 +1,24 @@
+# Corrección Modo 2 - Revisión de Código
+## Marcos Uriel Rodriguez
+
+### Recogida de datos (30%) - 6/10
+131 rondas es un volumen limitado para entrenar un modelo. Positivo que hayas documentado bien el DATOS.md explicando el proceso: datos propios jugando con familia + datos externos de internet. El CSV tiene las columnas básicas correctamente formateadas (aunque uses punto y coma como separador). Sin embargo, mezclar datos propios con datos de internet puede introducir inconsistencias en los patrones de comportamiento que el modelo intenta aprender.
+
+### Feature Engineering (30%) - 7/10
+Buen trabajo en esta sección. Has implementado features útiles más allá de la plantilla:
+- Frecuencias acumuladas de cada jugada con expanding().mean()
+- Lag features para las últimas 3 jugadas
+- Rachas de victorias/derrotas (win_streak, lose_streak) - bien implementado con bucle
+- Detección de cambio de jugada
+- Feature "repite_si_gana" aunque la lógica parece tener un error con el shift
+
+La estructura está bien aunque algunas features como "jugada_inicial" no aportan valor predictivo real ya que es simplemente la jugada actual, no la primera del juego.
+
+### Modelo (40%) - 6.5/10
+Código correcto y bien estructurado. Comparas los tres modelos estándar (KNN, DecisionTree, RandomForest) y seleccionas el mejor. El uso de stratify en train_test_split es apropiado. La clase JugadorIA está bien implementada y usa las mismas funciones de features tanto en entrenamiento como en predicción, lo cual es correcto.
+
+Sin embargo, todos los modelos usan hiperparámetros por defecto. Falta experimentación con diferentes valores (n_neighbors, max_depth, n_estimators, etc.) que podría mejorar significativamente el rendimiento.
+
+## NOTA MODO 2: 6.5/10
+
+*Nota: Trabajo correcto con margen de mejora en volumen de datos y ajuste de hiperparámetros.*

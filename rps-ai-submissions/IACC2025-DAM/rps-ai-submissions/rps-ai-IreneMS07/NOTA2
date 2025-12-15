@@ -1,0 +1,13 @@
+# Corrección Modo 2 - Revisión de Código
+## Irene Martínez, Sergio Gascón
+
+### Recogida de datos (30%) - 4/10
+115 rondas, volumen justo. Los datos están pegados directamente en el DATOS.md en lugar de estar en el CSV de la carpeta data/. Esto dificulta el procesamiento y no es la forma correcta de organizar el proyecto. No hay documentación del proceso de recogida.
+
+### Feature Engineering (30%) - 2.5/10
+El código está prácticamente sin modificar. Las funciones de features siguen con los comentarios TODO y no se han implementado features adicionales. Solo se usan las conversiones básicas de jugadas a números.
+
+### Modelo (40%) - 3.5/10
+Los imports de modelos de sklearn están comentados. Las funciones de entrenamiento y comparación no están completadas. No hay evidencia de haber probado diferentes modelos ni de haber analizado los resultados.
+
+## NOTA MODO 2: 3.5/10

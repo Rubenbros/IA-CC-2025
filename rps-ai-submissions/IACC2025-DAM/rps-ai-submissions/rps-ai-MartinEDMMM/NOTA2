@@ -1,0 +1,13 @@
+# Corrección Modo 2 - Revisión de Código
+## Martin Miroslavov, Carlos Arilla
+
+### Recogida de datos (30%) - 5.5/10
+152 rondas con un programa propio, correcto. El problema es que todas las partidas son contra la misma persona, lo cual limita la variedad de patrones que el modelo puede aprender. Hubiera sido mejor jugar contra 2-3 personas diferentes. El CSV tiene las columnas correctamente formateadas.
+
+### Feature Engineering (30%) - 5/10
+Features básicas con los lags de la plantilla. No habéis añadido features propias como frecuencia de cada jugada en las últimas N rondas, si el oponente repite jugada tras ganar/perder, o detección de secuencias.
+
+### Modelo (40%) - 6/10
+La estructura del código está bien, se comparan los tres modelos y se guarda el mejor. Los hiperparámetros son los de por defecto pero el flujo de entrenamiento es correcto.
+
+## NOTA MODO 2: 5.5/10
