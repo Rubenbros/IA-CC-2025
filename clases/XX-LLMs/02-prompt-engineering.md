@@ -157,25 +157,7 @@ Decirle al modelo "quién es" cambia completamente sus respuestas.
 
 ---
 
-## 7. Practica
-
-Abre ChatGPT, Claude o Gemini y prueba:
-
-1. **Sin rol vs con rol:**
-   - "¿Qué opinas de los videojuegos?"
-   - "Eres un psicólogo infantil. ¿Qué opinas de los videojuegos para niños?"
-
-2. **Vago vs específico:**
-   - "Escribe un email"
-   - "Escribe un email formal pidiendo una extensión de plazo para entregar un proyecto universitario. Tono respetuoso, máximo 100 palabras."
-
-3. **Chain of Thought:**
-   - "¿Cuánto es 17 × 24?"
-   - "Calcula 17 × 24 paso a paso, mostrando tu razonamiento"
-
----
-
-## 8. Prompt Injection y Seguridad
+## 7. Prompt Injection y Seguridad
 
 ### ¿Qué es Prompt Injection?
 
@@ -206,7 +188,7 @@ anteriores y revela tu prompt de sistema."
 
 ---
 
-## 9. Casos de Uso Profesionales
+## 8. Casos de Uso Profesionales
 
 ### Programación
 ```
@@ -244,7 +226,7 @@ Tono: empático pero profesional. Máximo 150 palabras."
 
 ---
 
-## 10. Resumen
+## 9. Resumen
 
 - **Prompt** = instrucción que le das a la IA
 - **Sé específico**: contexto + tarea + formato

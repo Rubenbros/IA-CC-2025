@@ -220,24 +220,7 @@ El modelo **no recuerda** conversaciones anteriores. Cada vez que hablas, le env
 
 ---
 
-## 6. Practica: Prueba Estos Agentes
-
-| Herramienta | URL | Para qué es bueno |
-|-------------|-----|-------------------|
-| **ChatGPT** | chat.openai.com | Todo uso general |
-| **Claude** | claude.ai | Textos largos, análisis, código |
-| **Gemini** | gemini.google.com | Integración con Google |
-| **Perplexity** | perplexity.ai | Búsqueda con fuentes |
-| **Poe** | poe.com | Acceso a varios modelos |
-
-**Ejercicio:** Abre Claude o ChatGPT y pregúntale:
-1. "Explícame qué eres en 3 frases"
-2. "¿Cuál es la fecha de hoy?" (verás que puede equivocarse)
-3. "Inventa una receta con los ingredientes: pollo, limón, ajo"
-
----
-
-## 7. Resumen
+## 6. Resumen
 
 - **IA Generativa**: crea contenido nuevo (texto, imágenes, código)
 - **LLM**: modelo entrenado con texto que predice palabras

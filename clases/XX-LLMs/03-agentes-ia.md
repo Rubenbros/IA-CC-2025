@@ -288,23 +288,7 @@ Una categoría especial de agentes que pueden **escribir y ejecutar código**.
 
 ---
 
-## 8. Practica
-
-**Ejercicio 1: Prueba un agente con herramientas**
-1. Abre ChatGPT (versión gratuita)
-2. Pregunta: "¿Cuál es la noticia más importante de hoy en España?"
-3. Observa cómo busca en internet antes de responder
-
-**Ejercicio 2: Compara agente vs chatbot**
-1. En ChatGPT: "Analiza las ventas de este archivo" (sube un Excel simple)
-2. El agente usará herramientas para leerlo y analizarlo
-
-**Ejercicio 3: Agente multi-paso**
-> "Busca las 3 películas más taquilleras de 2024, encuentra sus puntuaciones en IMDB, y recomiéndame cuál ver primero basándote en mis gustos: me gustan las películas de acción pero no las muy largas"
-
----
-
-## 9. Agentes en el Mundo Real (2024-2025)
+## 8. Agentes en el Mundo Real (2024-2025)
 
 ### Casos de Uso Actuales
 
@@ -328,7 +312,7 @@ Una categoría especial de agentes que pueden **escribir y ejecutar código**.
 
 ---
 
-## 10. Resumen
+## 9. Resumen
 
 - **Agente** = IA que ejecuta acciones, no solo habla
 - **Herramientas** = habilidades del agente (buscar, calcular, leer archivos)
